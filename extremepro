@@ -6,10 +6,10 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "EXTREMEPRO" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL3RlYW1leHRyZW1lcHJvL2V4dHJlbWVwcm91c2VyYm90L2FyY2hpdmUvbWFzdGVyLnppcA=='" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1VMVFJBLU9QL1VMVFJBLVgvYXJjaGl2ZS9uZXcuemlw=='" | base64 -d
     elif [[ $UPSTREAM_REPO == "DEV" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL3RlYW1leHRyZW1lcHJvL2V4dHJlbWVwcm91c2VyYm90L2FyY2hpdmUvZGV2LnppcA=='" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1VMVFJBLU9QL1VMVFJBLVgvYXJjaGl2ZS9uZXcuemlw=='" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
@@ -19,7 +19,7 @@ _get_repolink () {
             echo "${UPSTREAM_REPO}/archive/master.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL3RlYW1leHRyZW1lcHJvL2V4dHJlbWVwcm91c2VyYm90L2FyY2hpdmUvbWFzdGVyLnppcA==" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1VMVFJBLU9QL1VMVFJBLVgvYXJjaGl2ZS9uZXcuemlw==" | base64 -d
     fi
 }
 
@@ -53,7 +53,7 @@ _set_bot () {
     :.......::::......:::........::..:::::..::........::::.......::::::..:::::
     "
     python3 ../setup/updater.py ../requirements.txt requirements.txt
-    python3 -m Extre
+    python3 -m ULTRA
 }
 
 _set_bot
