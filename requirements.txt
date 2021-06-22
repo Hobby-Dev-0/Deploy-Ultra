@@ -1,6 +1,7 @@
 Pillow>=5.3.0
 PyGithub
 pygifsicle
+pyrogram>=1.1.13
 PyDictionary
 PyPDF2
 pygments
@@ -82,4 +83,4 @@ tswift
 telethon==1.21.1
 faker
 google_trans_new
-pip==21.1.2
+LEGENDX
